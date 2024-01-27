@@ -1,0 +1,50 @@
+/* Aligning Deck and Deck2 containers */
+.Deck,
+.Deck2 {
+  text-align: center; /* Center-align children (buttons) */
+  margin: 20px 0; /* Add vertical spacing around the buttons */
+}
+
+/* Styling for buttons in Deck and Deck2 */
+.Deck button,
+.Deck2 button {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  display: inline-block; /* Align the button inline */
+  margin: 10px 0; /* Add vertical margin for spacing */
+}
+
+/* Hover effect for buttons */
+.Deck button:hover,
+.Deck2 button:hover {
+  cursor: pointer;
+  background-color: #444;
+}
+
+/* Active and focus states for buttons */
+.Deck button:active,
+.Deck button:focus,
+.Deck2 button:active,
+.Deck2 button:focus {
+  outline: none;
+}
+
+/* Card area styling */
+.card-area {
+  margin-top: 20px; /* Adjusted top margin */
+  margin-bottom: 20px; /* Added bottom margin to separate from Shuffle button */
+  margin-left: 50px; /* Left margin for alignment */
+  position: relative; /* Needed for absolute positioning of cards */
+  height: 400px; /* Set a fixed height to contain the cards */
+}
+
+/* Card styling */
+.Card {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Center each card horizontally */
+  /* Include any additional styling as needed */
+}
